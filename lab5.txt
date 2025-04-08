@@ -1,0 +1,41 @@
+---LAB5--
+
+BEGIN {
+    FS=" "  # Set field separator to space
+    math_sum=0; science_sum=0; english_sum=0
+    math_count=0; science_count=0; english_count=0
+}
+
+NR > 1 {  # Skip the header row (NR == 1)
+    math_sum += $2
+    science_sum += $3
+    english_sum += $4
+    math_count++
+    science_count++
+    english_count++
+}
+
+END {
+    printf "Average Math: %.2f\n", math_sum/math_count
+    printf "Average Science: %.2f\n", science_sum/science_count
+    printf "Average English: %.2f\n", english_sum/english_count
+}
+
+awk -f average.awk scores.csv
+Average Math: 78.33
+Average Science: 85.67
+Average English: 91.00
+
+{
+    ip = $1  # Extract the IP address (first field)
+    count[ip]++  # Increment count for this IP
+}
+
+END {
+    for (ip in count) {
+        print ip, count[ip]  # Print IP and its count
+    }
+}
+
+awk -f count_lps.awk server.log
+

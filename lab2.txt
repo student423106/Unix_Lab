@@ -1,0 +1,218 @@
+---LAB2---
+
+student@samsung-tv:~/Desktop/423106Unix$ cd 423106Unix
+student@samsung-tv:~/Desktop/423106Unix$ touch alpha.txt
+student@samsung-tv:~/Desktop/423106Unix$ touch admissions.txt
+student@samsung-tv:~/Desktop/423106Unix$ touch myfile.txt
+student@samsung-tv:~/Desktop/423106Unix$ ls -d a*
+admissions.txt  alpha.txt
+student@samsung-tv:~/Desktop/423106Unix$ ls a*
+admissions.txt  alpha.txt
+
+student@samsung-tv:~/Desktop/423106Unix$ touch file1
+student@samsung-tv:~/Desktop/423106Unix$ ls ?????
+file1  games
+
+student@samsung-tv:~/Desktop/423106Unix$ touch file1
+student@samsung-tv:~/Desktop/423106Unix$ ls ?????
+file1  games
+
+student@samsung-tv:~/Desktop/423106Unix$ touch batches.txt
+student@samsung-tv:~/Desktop/423106Unix$ ls [b-e]*
+admissions.txt  alpha.txt  batches.txt  demo.txt  
+
+student@samsung-tv:~/Desktop/423106Unix$ ls ?[0-9]*.log
+student@samsung-tv:~/Desktop/423106Unix$ touch dataX
+student@samsung-tv:~/Desktop/423106Unix$ ls data?
+dataX
+
+student@samsung-tv:~/Desktop/423106Unix$ echo "I love $HOME"
+I love /home/student
+student@samsung-tv:~/Desktop/423106Unix$ echo 'I love $HOME'
+I love $HOME
+
+student@samsung-tv:~/Desktop/423106Unix$ touch file\\with\\slashes
+student@samsung-tv:~/Desktop/423106Unix$ ls
+admissions.txt  alpha.txt  data.txt  file\\with\\slashes  games  hello.txt myfile.txt  yourfile.txt
+
+student@samsung-tv:~/Desktop/423106Unix$ echo '*'
+*
+student@samsung-tv:~/Desktop/423106Unix$ echo 'Today is "Monday"'
+Today is "Monday"
+
+student@samsung-tv:~/Desktop/423106Unix$ touch 'data$heet'
+student@samsung-tv:~/Desktop/423106Unix$ ls
+admissions.txt  alpha.txt  data.txt  data$heet  file\\with\\slashes games hello.txt myfile.txt yourfile.txt
+
+student@samsung-tv:~/Desktop/423106Unix$ ls > output.txt
+student@samsung-tv:~/Desktop/423106Unix$ cat output.txt
+a1.log
+academicA.txt
+admissions.txt
+alpha.txt
+b2ween.log
+batches.txt
+data5.txt
+data' sheet
+dataX
+demo.txt
+file
+file1
+filemyreport
+file\with\slash
+filewithslash
+file\with\slashes
+games
+hello
+hello world
+m2file.txt
+myfile.txt
+output.txt
+reportABCfile.txt
+yourfile.txt
+
+student@samsung-tv:-/Desktop/423106Unix$ date >> output.txt
+student@samsung-tv:-/Desktop/423106Unix$ cat output.txt
+a1.log
+academica.txt
+admissions.txt
+alpha.txt
+b2ween.log
+batches.txt
+data5.txt
+data'sheet
+datax
+demo.txt
+file
+file1
+filemyreport
+file\with slash
+filewithslash
+file\with slashes
+games
+hello
+hello world
+m2file.txt
+myfile.txt
+output.txt
+reportABCfile.txt
+yourfile.txt
+Tuesday 28 January 2025 03:36:55 PM +0530
+student@samsung-tv/Desktop/423106llntys
+Question 16:
+List all files in the current directory, sort them alphabetically, and display only the first 5 files.
+student@samsung-tv:-/Desktop/423106Unix$ ls -1 | sort | head -n 5
+a1.log
+academica.txt
+admissions.txt
+alpha.txt
+b2ween.log
+studentesamsung-ty-/Desktop/42310601x5
+
+student@samsung-tv:-/Desktop/423106Unix$ ls -1 | sort | head -n 5
+a1.log
+academica.txt
+admissions.txt
+alpha.txt
+b2ween.log
+student@samsung-ty:=(Desktop/423106Unix$
+
+student@samsung-tv:~/Desktop/423106Unix$ ls *.txt | wc -l
+11
+
+student@samsung-tv:-/Desktop/423106Unix$ currDate=$(date)
+student@samsung-tv:-/Desktop/423106Unix$ echo $currDate
+Tuesday 28 January 2025 03:41:44 PM +0530
+student@sansung-tv:-/Desktop/421100Unias touch backup_$(date +%Y-%m-%d)
+student@sansung-tv:-/Desktop/423100UNLKS ls
+a1.log data'sheet file file\with slashes' myfile.txt yourfile.txt
+academicA.txt data5.txt filemyreport games output.txt
+admissions.txt dataX file\with slash hello reportABCfile.txt
+alpha.txt demo.txt filewithslash hello world
+backup_2025-01-28
+b2ween.log
+batches.txt
+
+student@samsung-tv:-/Desktop/423106Unix$ sleep 10 &
+[1] 23239
+student@samsung-tv:-/Desktop/423106Unix$ jobs
+[1]+ Running sleep 10 &
+
+student@samsung-tv:-/Desktop/423106Unix$ jobs
+[1]+ Running sleep 10 &
+student@samsung-tv:-/Desktop/423106Unix$ fg %<job_id>
+bash: syntax error near unexpected token 'newline'
+[1]+ Done sleep 10
+
+student@samsung-tv:-/Desktop/423106Unix$ touch abc123.sh
+student@samsung-tv:-/Desktop/423106Unix$ touch admit25stud.sh
+student@samsung-tv:~/Desktop/423106Unix$ ls *[0-9]*.sh
+abc123.sh admit25stud.sh
+
+student@samsung-tv:-/Desktop/423106Unix$ ls a[^b]*.log
+a1.log
+
+student@sarsung-tv:-/Desktop/423106Unix$ echo "This file is created for learning purposes.." > learnings.txt && cat learnings.txt
+This file is created for learning purposes.
+student@sansung-tv:-/Desktop/423106Unix$
+
+student@sansung-tv:-/Desktop/423106Unix$ ls | awk '/\.txt$/ {print $0}' > filtered_files.txt
+student@samsung-tv:-/Desktop/423106Unix$ cat filtered_files.txt
+academica.txt
+admissions.txt
+alpha.txt
+batches.txt
+data5.txt
+demo.txt
+filtered_files.txt
+learnings.txt
+n2file.txt
+nyfile.txt
+output.txt
+reportABCfile.txt
+yourfile.txt
+
+student@sansung-tv:-/Desktop/423106Unix$ wc -l < filtered_files.txt >> filtered_files.txt
+student@sansung-tv:-/Desktop/423106Unix$ ls
+a1.log admit25stud.sh batches.txt demo.txt 'file\with slash' games
+abc123.sh alpha.txt data5.txt file filewithslash hello
+academica.txt b2ween.log "data sheet" file1 'file\with slashes' 'hello
+admissions.txt backup_2025-01-28 datax filemyreport filtered_files.txt learn
+student@sansung-tv:-/Desktop/423106Unix$ cat filtered_files.txt
+academica.txt
+admissions.txt
+alpha.txt
+batches.txt
+data5.txt
+demo.txt
+filtered_files.txt
+learnings.txt
+n2file.txt
+nyfile.txt
+output.txt
+reportABCfile.txt
+yourfile.txt
+13
+
+Student@samsung.tv:~/Desktop/4231000m1x$ wc -l < filtered_files.txt >> filtered_files.txt
+student@samsung.tv:~/Desktop/4231000m1x$ ls
+a1.log    admits2stud.sh    batches.txt    demo.txt    'file(with)slash'    game
+abc123.sh    alpha.txt    data5.txt    files    filewithslash    hello
+academic.cs.txt    bjeven.log    'data'shset"    files    'file(with)Slashes'    hello
+admissions.txt    backup_2025-a1-28    data4    filemyreport    filtered_files.txt    learn
+student@samsung.tv:~/Desktop/4231000m1x$ cat filtered_files.txt
+academic.cs.txt
+admissions.txt
+alpha.txt
+batches.txt
+data5.txt
+demo.txt
+filtered_files.txt
+learnings.txt
+nzfile.txt
+nzfile.txt
+output.txt
+reportdbcfile.txt
+yourfile.txt
+
+

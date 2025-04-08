@@ -1,0 +1,188 @@
+---LAB 1---
+
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ hostname
+ai-HP-ProDesk-600-G4-MT
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cal Jan 2024
+    January 2024
+Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 31
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cal Feb 1995
+   February 1995
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cal 9 0007
+   September 7
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28 29 30
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cal
+     January 2025
+Su Mo Tu We Th Fr Sa
+          1  2  3  4
+ 5  6  7  8  9 10 11
+12 13 14 15 16 17 18
+19 20 21 22 23 24 25
+26 27 28 29 30 31
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ %a
+bash: fg: %a: no such job
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ date "+%a %D"
+Tue 04/08/25
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ date +%B %Y
+Try 'date --help' for more information.
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ date "+%B %Y"
+April 2025
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$
+
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ date +%c
+Tue 08 Apr 2025 03:00:08 PM IST
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ date "+%r"
+03:00:28 PM IST
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ date "+%T"
+15:00:37
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ echo $HOME
+/home/student
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ mkdir SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ mkdir TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ /SAMPLES mkdir TRIAL
+bash: /SAMPLES: No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd ../TRIAL
+bash: cd: ../TRIAL: No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd /SAMPLE/TRIAL
+bash: cd: /SAMPLE/TRIAL: No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ ls
+SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd ./TRIAL
+bash: cd: ./TRIAL: No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd ./SAMPLE/TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/TRIAL$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd ./SAMPLE/TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/TRIAL$ cd ../
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ ls
+TRIAL
+
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ ls
+myfile.txt  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ ls
+SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ ls
+TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ ls
+SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd ./SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ mkdir SAMPLES
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ cd SAMPLES
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ touch myfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ touch yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ ls
+myfile.txt  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ echo "This file is used for the purpose of learning Unix Commands" > myfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ echo "Your file has been created here asone single lines" > yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ cat myfile.txt
+This file is used for the purpose of learning Unix Commands
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ cat yourfile.txt
+Your file has been created here asone single lines
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ touch .hiddenfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ ls
+myfile.txt  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ touch emp.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ ls
+emp.txt  myfile.txt  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ echo myfile.txt >> emp.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ cat emp.txt
+myfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ cp myfile.txt emp.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ cat emp.txt
+This file is used for the purpose of learning Unix Commands
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ alias myfile = "myfile.txt"
+bash: alias: myfile: not found
+bash: alias: =: not found
+bash: alias: myfile.txt: not found
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ alias myfile="myfile.txt"
+
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ mkdir Dept
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop$ cd Unix423106
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd Dept
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/Dept$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLES
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ mv yourfile.txt ../Unix423106/Dept
+mv: cannot move 'yourfile.txt' to '../Unix423106/Dept': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLE
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE$ cd SAMPLES
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ mv yourfile.txt ../../Dept
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLE/SAMPLES$ cd ../../Dept
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/Dept$ ls
+yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/Dept$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLES
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ ls
+myfile.txt  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp SAMPLES/yourfile.txt ~/Desktop/Unix423106/Dept
+cp: cannot stat 'SAMPLES/yourfile.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp yourfile.txt ~/Desktop/Unix423106/Dept
+cp: cannot create regular file '/home/student/Desktop/Unix423106/Dept': Not a directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp yourfile.txt Desktop/Unix423106/Dept
+cp: cannot create regular file 'Desktop/Unix423106/Dept': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ mkdir TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp emp.txt Desktop/Unix423106/Dept
+cp: cannot create regular file 'Desktop/Unix423106/Dept': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp SAMPLE/emp.txt ./Dept
+cp: cannot stat 'SAMPLE/emp.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp SAMPLE/emp.txt ../Dept
+cp: cannot stat 'SAMPLE/emp.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd Dept
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/Dept$ touch dept.txt
+
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd Dept
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/Dept$ touch dept.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/Dept$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cp SAMPLE/emp.txt Dept/dept.txt
+cp: cannot stat 'SAMPLE/emp.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cp Desktop/Unix423106/SAMPLE/emp.txt Dept/dept.txt
+cp: cannot stat 'Desktop/Unix423106/SAMPLE/emp.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cp SAMPLE/emp.txt ./Dept/dept.txt
+cp: cannot stat 'SAMPLE/emp.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cp ./SAMPLE/emp.txt ./Dept/dept.txt
+cp: cannot stat './SAMPLE/emp.txt': No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLE
+bash: cd: SAMPLE: No such file or directory
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106$ cd SAMPLES
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ ls
+myfile.txt  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp myfile.txt emp.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ echo "Created a difference!" >> emp.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cmp myfile.txt emp.txt
+myfile.txt emp.txt differ: byte 37, line 2
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ mkdir TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp emp.txt ./TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cd TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES/TRIAL$ ls
+emp.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES/TRIAL$ cd ..
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ ls
+emp.txt  myfile.txt  TRIAL  yourfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cp myfile.txt emp.txt ./TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES$ cd TRIAL
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES/TRIAL$ ls
+emp.txt  myfile.txt
+student@ai-HP-ProDesk-600-G4-MT:~/Desktop/Unix423106/SAMPLES/TRIAL$ 

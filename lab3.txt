@@ -1,0 +1,133 @@
+--lab3---
+
+echo "Enter number: "
+read num
+if [ $((num % 2)) -eq 0 ]
+then
+    echo "Number is even"
+else
+    echo "Number is odd"
+fi
+Enter number: 
+6
+Number is even
+
+echo "Enter year: "
+read year
+if [ $((year % 4)) -eq 0 ] && [ $((year % 100)) -ne 0 ] || [ $((year % 400)) -eq 0 ]; then
+    echo "$year is a leap year"
+else
+    echo "$year is not a leap year"
+fi
+
+Enter year: 
+2024
+2024 is a leap year
+
+Enter year: 
+2025
+2025 is not a leap year
+
+echo "Enter number: "
+read n
+fact=1
+for (( t = 2; t <= n; t++ ))
+do
+    fact=$((fact * t))
+done
+echo "Factorial of $n is: $fact"
+
+Enter number: 
+5
+Factorial of 5 is: 120
+
+echo "Enter number a: "
+read a
+echo "Enter number b: "
+read b
+
+# Swap using a temporary variable
+temp=$a
+a=$b
+b=$temp
+
+echo "a: $a and b: $b"
+
+Enter number a: 
+2
+Enter number b: 
+5
+a: 5 and b: 2
+
+echo "Enter a and b: "
+read a b
+
+# Store original values for LCM
+num1=$a
+num2=$b
+
+# Compute GCD using Euclidean algorithm
+while [ $num2 -ne 0 ]; do
+  temp=$num2
+  num2=$((num1 % num2))
+  num1=$temp
+done
+
+gcd=$num1
+lcm=$(( (a * b) / gcd ))
+
+echo "GCD of $a and $b is: $gcd"
+echo "LCM of $a and $b is: $lcm"
+
+Enter a and b: 
+12 18
+GCD of 12 and 18 is: 6
+LCM of 12 and 18 is: 36
+
+echo "Enter n: "
+read n
+
+i=1
+echo "Printing numbers from 1 to $n"
+while [ $i -le $n ]
+do
+    echo $i
+    i=$((i+1))
+done
+
+Enter n: 
+10
+Printing numbers from 1 to 10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+echo "Enter n: "
+read n
+
+echo "Using for loop:"
+for ((i=1; i<=n; i++))
+do
+    echo $i
+done
+
+Enter n: 
+10
+Using for loop:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10

@@ -1,0 +1,34 @@
+---LAB4---
+
+grep "ERROR" log.txt
+[2024-02-01 12:05:23] ERROR: Failed to connect to database.
+[2024-02-01 12:15:36] ERROR: User authentication failed.
+
+# If data.txt had "success" entries:
+echo "success success" > data.txt
+grep -o "success" data.txt | wc -l
+2
+
+grep "^[0-9]" records.txt
+101, John Doe, Manager, 60000
+102, Alice Smith, Developer, 60000
+103, Bob Brown, Designer, 55000
+104, Charlie Johnson, Analyst, 52000
+105, David White, Developer, 62000
+106, Eve Black, Manager, 70000
+
+grep -E "ERROR|fail" log.txt
+[2024-02-01 12:05:23] ERROR: Failed to connect to database.
+[2024-02-01 12:15:59] ERROR: User authentication failed.
+
+grep "^[A-Z]" sentences.txt
+hello world! This is a simple test file.  # Only this line starts with a capital "T" in "This".
+
+grep -l "project" * 2>/dev/null
+project_list.txt
+project_notes.md
+
+grep -i "404" server.log
+192.168.1.13 -- [10/Feb/2024:10:19:21] 'GET /contact.html HTTP/1.1' 404
+
+
