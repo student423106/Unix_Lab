@@ -1,0 +1,648 @@
+student@ai-HP-ProDesk-600-G4-MT:~$ dpkg -l
+Desired=Unknown/Install/Remove/Purg>
+| Status=Not/Inst/Conf-files/Unpack>
+|/ Err?=(none)/Reinst-required (Sta>
+||/ Name                           >
++++-===============================>
+ii  accountsservice                >
+ii  acl                            >
+ii  acpi-support                   >
+lines 2-8
+^C
+student@ai-HP-ProDesk-600-G4-MT:~$ rpm -qa
+
+Command 'rpm' not found, but can be installed with:
+
+sudo apt install rpm
+
+student@ai-HP-ProDesk-600-G4-MT:~$ sudo apt install rpm
+[sudo] password for student: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  debugedit liblua5.2-0 librpm8
+  librpmbuild8 librpmio8
+  librpmsign8 rpm-common rpm2cpio
+Suggested packages:
+  rpm-i18n alien elfutils rpmlint
+  rpm2html
+The following NEW packages will be installed:
+  debugedit liblua5.2-0 librpm8
+  librpmbuild8 librpmio8
+  librpmsign8 rpm rpm-common
+  rpm2cpio
+0 upgraded, 9 newly installed, 0 to remove and 486 not upgraded.
+Need to get 610 kB of archives.
+After this operation, 2,587 kB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.83:80&blocked_url=http://archive.ubuntu.com/ubuntu focal/main amd64 liblua5.2-0 amd64 5.2.4-1.1build3 [106 kB]
+Err:1 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.83:80&blocked_url=http://archive.ubuntu.com/ubuntu focal/main amd64 liblua5.2-0 amd64 5.2.4-1.1build3
+  File has unexpected size (3010 != 105748). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:190d0ea83af7f1f3c7174cd7afaad2c5c0e4ff85b35ffcf3627b5b592d0e8c90
+   - SHA1:3802488649fcbe7136dbcdbc78fb6712f19613ce [weak]
+   - MD5Sum:e7cb0927bedae6eb16744e0448e337b2 [weak]
+   - Filesize:105748 [weak]
+Get:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpmio8 amd64 4.14.2.1+dfsg1-1build2 [75.2 kB]
+Err:2 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpmio8 amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 75232). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:f5012ced5b5bb110e6d6b351f867634dd39811dd53cd6d578290f751e26c819e
+   - SHA1:6d5f386eb0ee2d0bc3ca70a7e656d138f545ac83 [weak]
+   - MD5Sum:0572c1a5f59272a62cd86c6b788f9f74 [weak]
+   - Filesize:75232 [weak]
+Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 debugedit amd64 4.14.2.1+dfsg1-1build2 [19.5 kB]
+Err:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 debugedit amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 19452). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:38d4534885deb5cde0c8014dfa3d93c0d13904a1dc4c297c8d201d2bc150e072
+   - SHA1:576ff60229c5d1a0b393531ac3b14a1ba1e7884a [weak]
+   - MD5Sum:bba963abd1f349cd05fd3fa4b843ea3b [weak]
+   - Filesize:19452 [weak]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpm8 amd64 4.14.2.1+dfsg1-1build2 [174 kB]
+Err:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpm8 amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 174220). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:a2364f2b8158aa68cdc477e3289dd028b8bbc660de931e0963bf76e5ae9433b4
+   - SHA1:4187e3b97ea4df26d4a7fd10b75dd95b87ca4132 [weak]
+   - MD5Sum:e5e51273602579b45940dce75a569bd4 [weak]
+   - Filesize:174220 [weak]
+Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpmbuild8 amd64 4.14.2.1+dfsg1-1build2 [70.9 kB]
+Err:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpmbuild8 amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 70888). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:6db05b00c0fac24ed1bae76b4834ac012b33479b35dc6dc6d929187f0703dbab
+   - SHA1:aba62ee215d7230db4a69adee8d229feb7083e79 [weak]
+   - MD5Sum:8bbd6061a277a553e78fa3df1b053107 [weak]
+   - Filesize:70888 [weak]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpmsign8 amd64 4.14.2.1+dfsg1-1build2 [8,280 B]
+Err:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 librpmsign8 amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 8280). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:3bae0ae069b31dd862227b3ddd3e3dda788df870473aedd1f1413740d51055eb
+   - SHA1:c91bfda0149d17f34c3b69245c36ae5bbd45e119 [weak]
+   - MD5Sum:b104a4db028b74e2b87c0b80a8f6f809 [weak]
+   - Filesize:8280 [weak]
+Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 rpm-common amd64 4.14.2.1+dfsg1-1build2 [28.8 kB]
+Err:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 rpm-common amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 28808). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:a78bc9c7cb7c839445f98094b4559350c29ed8bfd2415c9016ca34eed5bd6faf
+   - SHA1:264ea1b825609caedabc9baeb64aa0e150edd182 [weak]
+   - MD5Sum:bbf497fd9bbfb55ec6c11fdbe55ac53c [weak]
+   - Filesize:28808 [weak]
+Get:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 rpm2cpio amd64 4.14.2.1+dfsg1-1build2 [8,096 B]
+Err:8 http://archive.ubuntu.com/ubuntu focal/universe amd64 rpm2cpio amd64 4.14.2.1+dfsg1-1build2
+  File has unexpected size (3012 != 8096). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:6ab2fd306eb9c47737826fceb56c8b059423b763fefb4cf389ec93e879bd227a
+   - SHA1:892b487463efad9d504a75dde84ef761781727b7 [weak]
+   - MD5Sum:bf33a23676d19c23e08f66e167505a34 [weak]
+   - Filesize:8096 [weak]
+0% [Waiting for headers]^C         
+student@ai-HP-ProDesk-600-G4-MT:~$ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="20.04.2 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+student@ai-HP-ProDesk-600-G4-MT:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.2 LTS
+Release:	20.04
+Codename:	focal
+student@ai-HP-ProDesk-600-G4-MT:~$ sudo apt update
+Hit:1 https://packages.microsoft.com/repos/vscode stable InRelease
+Hit:2 https://packages.microsoft.com/repos/code stable InRelease
+Get:3 https://dl.google.com/linux/chrome/deb stable InRelease [1,825 B]
+Get:4 http://repo.mysql.com/apt/ubuntu focal InRelease [12.8 kB]
+Err:3 https://dl.google.com/linux/chrome/deb stable InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 32EE5355A6BC6E42
+Err:4 http://repo.mysql.com/apt/ubuntu focal InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY B7B3B788A8D3785C
+Hit:5 https://dl.winehq.org/wine-builds/ubuntu disco InRelease
+Get:6 https://dl.winehq.org/wine-builds/ubuntu bionic InRelease [6,263 B]
+Get:7 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal InRelease [2,975 B]
+Err:7 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+Err:6 https://dl.winehq.org/wine-builds/ubuntu bionic InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 76F1A20FF987672F
+Get:8 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal-updates InRelease [2,983 B]
+Err:8 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal-updates InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+Get:9 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal-backports InRelease [2,985 B]
+Err:9 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal-backports InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+Get:10 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal-security InRelease [2,984 B]
+Err:10 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal-security InRelease
+  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+Reading package lists... Done      
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: http://repo.mysql.com/apt/ubuntu focal InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY B7B3B788A8D3785C
+W: An error occurred during the signature verification. The repository is not updated and the previous index files will be used. GPG error: https://dl.google.com/linux/chrome/deb stable InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 32EE5355A6BC6E42
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+E: The repository 'https://dl.winehq.org/wine-builds/ubuntu bionic InRelease' is not signed.
+W: GPG error: https://dl.winehq.org/wine-builds/ubuntu bionic InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 76F1A20FF987672F
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+E: The repository 'http://archive.ubuntu.com/ubuntu focal InRelease' is no longer signed.
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+E: The repository 'http://archive.ubuntu.com/ubuntu focal-updates InRelease' is no longer signed.
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-updates/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-backports/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+E: The repository 'http://archive.ubuntu.com/ubuntu focal-backports InRelease' is no longer signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/dists/focal-security/InRelease  Clearsigned file isn't valid, got 'NOSPLIT' (does the network require authentication?)
+E: The repository 'http://archive.ubuntu.com/ubuntu focal-security InRelease' is no longer signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+student@ai-HP-ProDesk-600-G4-MT:~$ sudo dpkg -r htop
+dpkg: warning: ignoring request to remove htop which isn't installed
+student@ai-HP-ProDesk-600-G4-MT:~$ sudo apt install htop
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+  htop
+0 upgraded, 1 newly installed, 0 to remove and 486 not upgraded.
+Need to get 80.5 kB of archives.
+After this operation, 225 kB of additional disk space will be used.
+Get:1 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal/main amd64 htop amd64 2.2.0-2build1 [80.5 kB]
+Err:1 http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu focal/main amd64 htop amd64 2.2.0-2build1
+  File has unexpected size (2999 != 80544). Mirror sync in progress? [IP: 172.20.0.1 8090]
+  Hashes of expected file:
+   - SHA256:c803ab48c0f2e097283a2e0673914a758f10779a26a947a77d36a1e4353e85d6
+   - SHA1:f8186bcd203f82f1b9a5fc68fc474ed76f823a3c [weak]
+   - MD5Sum:b62b3db6e66b492bba542ce5d03b8758 [weak]
+   - Filesize:80544 [weak]
+E: Failed to fetch http://wired.meraki.com:8090/blocked.cgi?blocked_server=185.125.190.81:80&blocked_url=http://archive.ubuntu.com/ubuntu/pool/main/h/htop/htop_2.2.0-2build1_amd64.deb  File has unexpected size (2999 != 80544). Mirror sync in progress? [IP: 172.20.0.1 8090]
+   Hashes of expected file:
+    - SHA256:c803ab48c0f2e097283a2e0673914a758f10779a26a947a77d36a1e4353e85d6
+    - SHA1:f8186bcd203f82f1b9a5fc68fc474ed76f823a3c [weak]
+    - MD5Sum:b62b3db6e66b492bba542ce5d03b8758 [weak]
+    - Filesize:80544 [weak]
+ WEEK 8
+ # student@al-HP-ProDesk-600-G4-MT1-S 0lUnit -c
+0
+student@al-HP-ProDesk-600-G4-MT1-S 0lUnit -c unlimited
+student@al-HP-ProDesk-600-G4-MT1-S g0 Desktop
+student@al-HP-ProDesk-600-G4-MT1-/Desktop$ ls
+423106    423106    ashcc    file1.txt    hello    weekdubs.txt
+023100.404    023101    exercise    file2.txt    weekends.sql    word.txt
+student@al-HP-ProDesk-600-G4-MT1-/Desktop$ cd 423106
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106$ nkdir debugc
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106$ cd debugc
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ nano myprogram.c
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ gcc -g -o myprogram myprogram.c
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ gcc -g -o myprogram myprogram.c
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ ./myprogram
+Segmentation Fault (core dumps)
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ cat /proc/sys/kernel/core_pattern
+//usr/share/apport/apport -pkg -sns -ckc -dbd -pap -usu -gbg -- Rf
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ sudo echo "core" > /proc/sys/kernel/core_pattern
+book1 /proc/sys/kernel/core_pattern [remission denied]
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ echo "core" | sudo tee /proc/sys/kernel/core_pattern
+[sudo] password for student:
+core
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ gdb ./myprogram core
+GNU gdb (Ubuntu 3.2-Dubuntu:20.04.9.2)
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPtv3: GNU GPL version 8 for later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is no WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This can use configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration resources online at:
+http://www.gnu.org/software/gdb/documentation/>>.
+Find the DB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>>.
+Type "agropos word" to search for commands related to "word"...
+heading symbols from "/myprogram..."
+/home/student/Desktop/423106debugc/core: No such file or directory.
+(gdb)
+(gdb) bit
+HOLD OUT!
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ gdb ./myprogram core
+GNU gdb (Ubuntu 3.2-Dubuntu:20.04.9.2)
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPtv3: GNU GPL version 8 for later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is no WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This can use configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>>.
+Find the CDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>>.
+For help, type "help".
+Type "agropos word" to search for commands related to "word"...
+heading symbols from "/myprogram..."
+/home/student/Desktop/423106debugc/core: No such file or directory.
+(gdb)
+(gdb) bit
+No stack.
+Is cannot access "core": No such file or directory
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ uluit -c
+unlimited
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ cat /proc/sys/kernel/core_pattern
+core
+student@al-HP-ProDesk-600-G4-MT1-/Desktop/423106debugc$ echo "core" | sudo tee /proc/sys/kernel/core_pattern
+core
+
+
+
+WEEK 7
+student@at-HP-ProDesk-600-Cd-NT1-5 cd Desktop  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop5 cd 423106  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop1231075 git comnit  
+fatal: not a bit repository (or any of the parent directories): git  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 sudo apt-get install cvs  
+[sudo] password for student:  
+Reading package ... none  
+Building dependency tree ...  
+Reading state information... None  
+The following packages were automatically installed and are no longer required:  
+    libxml3 ubuntu advantage-desktop-daemon  
+Use 'sudo apt autoremove' to remove them.  
+Suggested packages:  
+    nksh res  
+The following Nksi packages will be installed:  
+    cvs  
+0 upgraded, 1 newly installed, 0 to remove and 136 not upgraded.  
+Need to get 2,518 kb of archives.  
+After this operation, 4,721 kb of additional disk space will be used.  
+Get1: http://in.archive.ubuntu.com/ubuntu focal/universe andea cvs andea zii.12.13+real-27build1 [2,518 kb]  
+Fetched 2,518 kb in 38 (500 kb/s)  
+Selecting previously unselected package cvs.  
+(Reading database ... 346282 files and directories currently installed.)  
+Preparing to uppack -10/cvs_26381.12.13+real-27build1_andea.deb ...  
+Unpacking cvs (zii.12.13+real-27build1) ...  
+Setting up cvs (zii.12.13+real-27build1) ...  
+Allowing use of questionable username.  
+Adding group _cvsadmin (210 138) ...  
+None.  
+Processing triggers for install.idv (6.7.0.dfsg.2-5) ...  
+Processing triggers for nameid (2.9.i-1) ...  
+studentsat-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 nkdir -/cvsrepo  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 cvs -d -/cvsrepo init  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 nkdir -/my.project  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 cd -/my.project  
+student@at-HP-ProDesk-600-Cd-NT1-7/my_projects gtx -d -/cvsrepo import -n "Initial comnit" my_project_name vendor_tag start_tag  
+
+No conflicts created by this import  
+
+student@at-HP-ProDesk-600-Cd-NT1-7/my_projects sudo apt-get install git  
+Reading package lists... None  
+Building dependency tree  
+Reading state information... None  
+git is already the newest version (112.25.1-1ubuntu3.14).  
+The following packages were automatically installed and are no longer required:  
+    libxml3 ubuntu advantage-desktop-daemon  
+Use 'sudo apt autoremove' to remove them.  
+0 upgraded, 0 newly installed, 0 to remove and 136 not upgraded.  
+student@at-HP-ProDesk-600-Cd-NT1-7/my_projects cd /..  
+student@at-HP-ProDesk-600-Cd-NT1-7/8 nkdir -/my.glt_project  
+student@at-HP-ProDesk-600-Cd-NT1-7/9 cd -/my.glt_project  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git init  
+Initialized empty git repository in /home/student/my.glt_project/git/  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects touch README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects echo "# my Project" > README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git add README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git add README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git comnit -n "Initial comnit for the project"  
+
+*** Please tell me who you are.  
+
+Run  
+    git config --global user.email "you@example.com"  
+    git config --global user.name "Your Name"  
+
+to set your account's default identity.  
+Dmit --global to set the identity only in this repository.  
+
+Fatal: unable to auto-detect email address (got 'student@at-HP-ProDesk-600-Cd-NT.(none)')  
+student@at-HP-ProDesk-600-Cd-NT1-7/my_glt_projects git config --global user.email "you@example.com"  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git config --global user.email "ajinkyaqawande000@gmail.com"  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git comnit -n "Initial comnit for the project"  
+
+*** Please tell me who you are.  
+
+Run  
+    git config --global user.email "you@example.com"  
+    git config --global user.name "Your Name"  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git config --global user.name "Ajinkya Gawande"  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git config --global user.email "ajinkyagawande000@gmail.com"  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git config --global user.name  
+Ajinkya Gawande  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Added feature A"  
+[master (root-commit) 8ec494b] Added Feature A  
+  1 file changed, 1 insertion()  
+   create mode 10064d README.md  
+student-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Initial commit for the project"  
+On branch master  
+nothing to commit, working true clean  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git branch feature-branch  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout feature-branch  
+Switched to branch 'feature-branch'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects echo "Feature A" -> feature.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git add feature.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Added feature A"  
+[feature-branch sfb178] Added feature A  
+  1 file changed, 1 insertion()  
+   create mode 10064d feature.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout main  
+error: pathSpec 'main' did not match any file(s) known to git  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout main  
+error: pathSpec 'main' did not match any file(s) known to git  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout master  
+Switched to branch 'master'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git branch feature-b  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout feature-b  
+Switched to branch 'feature-b'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects echo "Feature B" -> feature-b.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git add feature-b.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Added feature B"  
+[feature-b 824713] Added feature B  
+  1 file changed, 1 insertion()  
+   create mode 10064d feature.b.txt  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout main  
+error: pathSpec 'main' did not match any file(s) known to git  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout master  
+Switched to branch 'master'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git merge feature-branch  
+Updating 8ec494b. sfb178  
+Fast-forward  
+   feature.txt [ ] +  
+  1 file changed, 1 insertion()  
+   create mode 10064d feature.txt  
+   
+WEEK 7
+student@at-HP-ProDesk-600-Cd-NT1-5 cd Desktop  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop5 cd 423106  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop1231075 git comnit  
+fatal: not a bit repository (or any of the parent directories): git  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 sudo apt-get install cvs  
+[sudo] password for student:  
+Reading package ... none  
+Building dependency tree ...  
+Reading state information... None  
+The following packages were automatically installed and are no longer required:  
+    libxml3 ubuntu advantage-desktop-daemon  
+Use 'sudo apt autoremove' to remove them.  
+Suggested packages:  
+    nksh res  
+The following Nksi packages will be installed:  
+    cvs  
+0 upgraded, 1 newly installed, 0 to remove and 136 not upgraded.  
+Need to get 2,518 kb of archives.  
+After this operation, 4,721 kb of additional disk space will be used.  
+Get1: http://in.archive.ubuntu.com/ubuntu focal/universe andea cvs andea zii.12.13+real-27build1 [2,518 kb]  
+Fetched 2,518 kb in 38 (500 kb/s)  
+Selecting previously unselected package cvs.  
+(Reading database ... 346282 files and directories currently installed.)  
+Preparing to uppack -10/cvs_26381.12.13+real-27build1_andea.deb ...  
+Unpacking cvs (zii.12.13+real-27build1) ...  
+Setting up cvs (zii.12.13+real-27build1) ...  
+Allowing use of questionable username.  
+Adding group _cvsadmin (210 138) ...  
+None.  
+Processing triggers for install.idv (6.7.0.dfsg.2-5) ...  
+Processing triggers for nameid (2.9.i-1) ...  
+studentsat-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 nkdir -/cvsrepo  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 cvs -d -/cvsrepo init  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 nkdir -/my.project  
+student@at-HP-ProDesk-600-Cd-NT1-7/Desktop/4231065 cd -/my.project  
+student@at-HP-ProDesk-600-Cd-NT1-7/my_projects gtx -d -/cvsrepo import -n "Initial comnit" my_project_name vendor_tag start_tag  
+
+No conflicts created by this import  
+
+student@at-HP-ProDesk-600-Cd-NT1-7/my_projects sudo apt-get install git  
+Reading package lists... None  
+Building dependency tree  
+Reading state information... None  
+git is already the newest version (112.25.1-1ubuntu3.14).  
+The following packages were automatically installed and are no longer required:  
+    libxml3 ubuntu advantage-desktop-daemon  
+Use 'sudo apt autoremove' to remove them.  
+0 upgraded, 0 newly installed, 0 to remove and 136 not upgraded.  
+student@at-HP-ProDesk-600-Cd-NT1-7/my_projects cd /..  
+student@at-HP-ProDesk-600-Cd-NT1-7/8 nkdir -/my.glt_project  
+student@at-HP-ProDesk-600-Cd-NT1-7/9 cd -/my.glt_project  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git init  
+Initialized empty git repository in /home/student/my.glt_project/git/  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects touch README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects echo "# my Project" > README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git add README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git add README.md  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git comnit -n "Initial comnit for the project"  
+
+*** Please tell me who you are.  
+
+Run  
+    git config --global user.email "you@example.com"  
+    git config --global user.name "Your Name"  
+
+to set your account's default identity.  
+Dmit --global to set the identity only in this repository.  
+
+Fatal: unable to auto-detect email address (got 'student@at-HP-ProDesk-600-Cd-NT.(none)')  
+student@at-HP-ProDesk-600-Cd-NT1-7/my_glt_projects git config --global user.email "you@example.com"  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git config --global user.email "ajinkyaqawande000@gmail.com"  
+student@at-HP-ProDesk-600-Cd-NT1-7/ny_glt_projects git comnit -n "Initial comnit for the project"  
+
+*** Please tell me who you are.  
+
+Run  
+    git config --global user.email "you@example.com"  
+    git config --global user.name "Your Name"  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git config --global user.name "Ajinkya Gawande"  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git config --global user.email "ajinkyagawande000@gmail.com"  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git config --global user.name  
+Ajinkya Gawande  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Added feature A"  
+[master (root-commit) 8ec494b] Added Feature A  
+  1 file changed, 1 insertion()  
+   create mode 10064d README.md  
+student-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Initial commit for the project"  
+On branch master  
+nothing to commit, working true clean  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git branch feature-branch  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout feature-branch  
+Switched to branch 'feature-branch'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects echo "Feature A" -> feature.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git add feature.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Added feature A"  
+[feature-branch sfb178] Added feature A  
+  1 file changed, 1 insertion()  
+   create mode 10064d feature.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout main  
+error: pathSpec 'main' did not match any file(s) known to git  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout main  
+error: pathSpec 'main' did not match any file(s) known to git  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout master  
+Switched to branch 'master'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git branch feature-b  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout feature-b  
+Switched to branch 'feature-b'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects echo "Feature B" -> feature-b.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git add feature-b.txt  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git commit -n "Added feature B"  
+[feature-b 824713] Added feature B  
+  1 file changed, 1 insertion()  
+   create mode 10064d feature.b.txt  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout main  
+error: pathSpec 'main' did not match any file(s) known to git  
+student-at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git checkout master  
+Switched to branch 'master'  
+student@at-HP-ProDesk-600-Gd-MT1=/my_glt_projects git merge feature-branch  
+Updating 8ec494b. sfb178  
+Fast-forward  
+   feature.txt [ ] +  
+  1 file changed, 1 insertion()  
+   create mode 10064d feature.txt  
+   
+   
+WEEK 6
+Creating archive
+student@at-HP-ProDesk-600-G4-MT:~$ tar -czf myarc 423106A
+student@at-HP-ProDesk-600-G4-MT:~$ tar -t myarc
+
+Showing content of archive
+student@at-HP-ProDesk-600-G4-MT:~$ tar -tf myarc
+423106A/
+423106A/sentences.txt
+423106A/words.txt
+423106A/bigdata.txt
+423106A/data.txt
+423106A/csv_data.txt
+423106A/report.txt
+423106A/contacts.txt
+423106A/values.txt
+423106A/server.log
+423106A/records.txt
+423106A/marks.txt
+423106A/whitespace.txt
+423106A/fruits.txt
+423106A/events.txt
+423106A/log.txt
+423106A/swap.txt
+423106A/emalts.txt
+423106A/file.txt
+423106A/dictionary.txt
+423106A/text.txt
+423106A/input.txt
+
+Creating zip archive
+# student@ai-HP-ProDesk-600-G4-NT:~$ tar -cvzf myarch1 423106A
+423106A/
+423106A/sentences.txt
+423106A/words.txt
+423106A/bigdata.txt
+423106A/data.txt
+423106A/csv_data.txt
+423106A/report.txt
+423106A/contacts.txt
+423106A_values.txt
+423106A/server.log
+423106A/records.txt
+423106A/marks.txt
+423106A/whitespace.txt
+423106A/fruits.txt
+423106A/events.txt
+423106A/log.txt
+423106A/swap.txt
+423106A/enails.txt
+423106A/file.txt
+423106A/dictionary.txt
+423106A/text.txt
+423106A/input.txt
+
+Extracting archive in the current folder
+
+# student@ai-HP-ProDesk-600-G4-NT:~/423106/tar$ tar xvf /home/student/myarc
+423106A/
+423106A/sentences.txt
+423106A/words.txt
+423106A/bigdata.txt
+423106A/data.txt
+423106A/csv_data.txt
+423106A/report.txt
+423106A/contacts.txt
+423106A_values.txt
+423106A/server.log
+423106A/records.txt
+423106A/marks.txt
+423106A/whitespace.txt
+423106A/fruits.txt
+423106A/events.txt
+423106A/log.txt
+423106A/swap.txt
+423106A/enails.txt
+423106A/file.txt
+423106A/dictionary.txt
+423106A/text.txt
+423106A/input.txt
+
+Extracting zip in the current folder
+student@at-HP-ProDesk-600-c4-MT:~/423106/tar$ tar xvfz /home/student/myarc
+423106A/
+423106A/sentences.txt
+423106A/words.txt
+423106A/bigdata.txt
+423106A/data.txt
+423106A/csv_data.txt
+423106A/report.txt
+423106A/contacts.txt
+423106A/values.txt
+423106A/server.log
+423106A/records.txt
+423106A/narks.txt
+423106A/whitespace.txt
+423106A/fruits.txt
+423106A/events.txt
+423106A/log.txt
+423106A/swap.txt
+423106A/enails.txt
+423106A/file.txt
+423106A/dictionary.txt
+423106A/text.txt
+423106A/input.txt
+
+List content of zip file
+
+student@at-HP-ProDesk-600-c4-MT:~/423106/tar$ tar tvfz /home/student/myarc
+drwxrwxr-x student/student 0 2025-03-04 15:13 423106A/
+-rw-rw-r-- student/student 308 2025-02-11 15:06 423106A/sentences.txt
+-rw-rw-r-- student/student 52 2025-02-11 16:47 423106A/words.txt
+-rw-rw-r-- student/student 120 2025-02-11 15:01 423106A/bigdata.txt
+-rw-rw-r-- student/student 40 2025-02-11 14:58 423106A/data.txt
+-rw-rw-r-- student/student 27 2025-02-11 16:40 423106A/csv_data.txt
+-rw-rw-r-- student/student 263 2025-02-11 16:29 423106A/report.txt
+-rw-rw-r-- student/student 333 2025-02-11 15:00 423106A/contacts.txt
+-rw-rw-r-- student/student 39 2025-02-11 15:04 423106A/values.txt
+-rw-rw-r-- student/student 286 2025-02-11 15:06 423106A/server.log
+-rw-rw-r-- student/student 182 2025-02-11 15:07 423106A/records.txt
+-rw-rw-r-- student/student 36 2025-02-11 15:08 423106A/narks.txt
+-rw-rw-r-- student/student 188 2025-02-11 15:03 423106A/whitespace.txt
+-rw-rw-r-- student/student 71 2025-02-11 14:54 423106A/fruits.txt
+-rw-rw-r-- student/student 116 2025-02-11 14:56 423106A/events.txt
+-rw-rw-r-- student/student 284 2025-02-11 14:47 423106A/log.txt
+-rw-rw-r-- student/student 41 2025-02-11 16:39 423106A/swap.txt
+-rw-rw-r-- student/student 111 2025-02-11 14:57 423106A/enails.txt
+-rw-rw-r-- student/student 297 2025-02-11 16:41 423106A/file.txt
+-rw-rw-r-- student/student 64 2025-02-11 16:03 423106A/dictionary.txt
+-rw-rw-r-- student/student 179 2025-02-11 16:44 423106A/text.txt
+-rw-rw-r-- student/student 136 2025-02-11 16:27 423106A/input.txt
